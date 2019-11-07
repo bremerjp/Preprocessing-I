@@ -1,1 +1,309 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+  padding: 0% 10%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: #ddd;
+}
+nav a {
+  padding: 4% 0;
+  padding-left: 30px;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+    padding: 0;
+  }
+}
+header {
+  background: #ddd;
+  border-radius: 5px;
+  padding: 5% 4%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  header {
+    align-items: center;
+  }
+}
+header img {
+  width: 200px;
+  border-radius: 10px;
+}
+header h1 {
+  font-size: 2rem;
+}
+header h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+header p {
+  font-size: 1.2rem;
+  padding: 1.8% 0;
+}
+@media (max-width: 500px) {
+  header p {
+    padding: 5%;
+  }
+}
+header h1,
+header h2 {
+  padding: 1.5% 0;
+}
+header .button {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  color: #ddd;
+}
+header .button:hover {
+  color: white;
+  background: black;
+}
+.middle-content {
+  padding: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  line-height: 130%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    flex-wrap: wrap;
+  }
+}
+.middle-content section {
+  width: 48%;
+}
+@media (max-width: 500px) {
+  .middle-content section {
+    width: 100%;
+    padding-bottom: 5%;
+  }
+}
+.middle-content h3 {
+  font-size: 1.5rem;
+  padding-bottom: 4%;
+}
+@media (max-width: 500px) {
+  .middle-content h3 {
+    text-align: center;
+  }
+}
+.work-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.work-history h3 {
+  font-size: 1.5rem;
+  padding: 1% 0;
+}
+@media (max-width: 500px) {
+  .work-history h3 {
+    text-align: center;
+  }
+}
+.work-history table {
+  border-top: 1px solid black;
+}
+.work-history table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+.work-history table td {
+  text-align: center;
+  padding: 2% 0;
+}
+.work-history table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+footer {
+  padding: 5% 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  footer {
+    padding: 10% 0;
+  }
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: #ddd;
+}
+footer a {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+footer a:hover {
+  background: black;
+}
